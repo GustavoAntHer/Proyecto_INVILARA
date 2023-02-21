@@ -190,13 +190,12 @@ section p
 {
 	box-sizing: border-box;
 	display: flex;
-	padding: 10px;
+	padding: 10px 0px;
 }
 
 #galeria img
 {
 	width: 100%;
-	margin-top: 10px;
 	border: solid 3px #363636;
 	border-radius: 10px;
 }
@@ -205,6 +204,7 @@ section p
 {
 	flex: 50%;
 	padding: 10px;
+	margin: 0px 10px;
 	text-align: justify;
 }
 
@@ -265,6 +265,26 @@ section p
 .btn:hover
 {
 	background: #BFA9C2;
+}
+
+#g_border
+{
+	margin: 45px 70px;
+}
+
+#sec_g
+{
+	margin: 10px 0px;
+}
+
+#sgt
+{
+ margin-right: 25px;
+}
+
+#prv
+{
+	margin-left: 25px;
 }
 
 .formulario .campo, textarea

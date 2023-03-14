@@ -60,11 +60,11 @@ body
 {
 	position: absolute;
 	top: 90px;
-	left: 5px;
+	left: 7px;
 }
 
 #Navegacion li a{
-	padding: 2px 51px;
+	padding: 2px 46px;
 	color: white;
 	font-size: 30px;
 	text-decoration: none;
@@ -87,7 +87,7 @@ body
 
 #Navegacion li > .componentes
 {
-	width: 267px;
+	width: 257px;
 	text-align: center;
 }
 

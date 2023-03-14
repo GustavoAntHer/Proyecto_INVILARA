@@ -139,7 +139,7 @@ section h3
 	font-weight: bold;
 }
 
-section p 
+section p, ul
 {
 	text-align: justify;
 }

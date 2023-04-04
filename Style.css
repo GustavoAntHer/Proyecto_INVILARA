@@ -49,21 +49,21 @@ body
 	height: 38px;
 }
 
-#Navegacion ul
+nav ul
 {
 	list-style: none;
 	margin: 0px;
 	padding: 0px;
 }
 
-#Navegacion > ul
+nav > ul
 {
 	position: absolute;
 	top: 90px;
 	left: 7px;
 }
 
-#Navegacion li a{
+nav li a{
 	padding: 2px 46px;
 	color: white;
 	font-size: 30px;
@@ -72,20 +72,20 @@ body
 	transition: all 300ms ;
 }
 
-#Navegacion li ul
+nav li ul
 {
 	display: none;
 	position: absolute;
 }
 
-#Navegacion li > ul
+nav li > ul
 {
 	background: rgba(127, 171, 212, 70%);
 	border-bottom-left-radius: 20px;
 	border-bottom-right-radius: 20px;
 }
 
-#Navegacion li > .componentes
+nav li > .componentes
 {
 	width: 257px;
 	text-align: center;
@@ -96,7 +96,7 @@ body
 	float: left;
 }
 
-#Navegacion li:hover > ul
+nav li:hover > ul
 {
 	display: block;
 }
@@ -107,7 +107,7 @@ body
 	border-bottom-right-radius: 20px;
 }
 
-#Navegacion li a:hover
+nav li a:hover
 {
 	color: #EBC665;
 	background: #434343;
@@ -139,12 +139,12 @@ section h3
 	font-weight: bold;
 }
 
-section p, ul
+section p 
 {
 	text-align: justify;
 }
 
-.imagen
+.imagen,.imagen2
 {
 	border: 3px solid black;
 	border-radius: 20px;
@@ -294,13 +294,13 @@ section p, ul
 	border: solid 3px #dc8cf4;
 	margin-bottom: 20px;
 	border-radius: 10px;
-	outline: opx;
+	outline: 0px;
 	font-family: 'open sans', sans-serif;
 }
 
 .formulario textarea
 {
-	min-width: 530px;
+	min-width: 470px;
 	min-height: 130px;
 	max-height: 150px;
 }
@@ -330,4 +330,105 @@ footer
 	{
 		background-position: 0% 50%;
 	}
+}
+
+@media (max-width: 952px){
+
+	#Ministerio
+{
+	width: 120px;
+	height: 42px;
+}
+
+#año
+{
+	width: 85px;
+}
+
+
+#UPTAEB
+{
+	height: 70px;
+}
+
+
+#UPTAEB img
+{
+	padding: 10px;
+	width: 60px;
+}
+
+
+	nav>ul{
+		position: absolute;
+		top: 70px;
+		right: 8px;
+		line-height: 38px;
+	}
+	
+	Nav ul li a{
+		font-size: 20px;
+		padding: 0px 30px;
+	}
+
+
+	Nav li > .componentes
+{
+	width: 170px;
+}
+
+iframe{
+	width: 100%;
+	height: 508px;
+}
+
+.formulario
+{
+	grid-template-columns: repeat(1, 1fr);
+}
+
+.formulario > div{
+	text-align: center;
+}
+
+.formulario .campo,textarea{
+	width: 90%;
+}
+
+}
+
+@media (max-width: 858px){
+
+	nav>ul{
+		margin-left: 8px;
+	}
+	
+	Nav ul li a{
+		font-size: 17px;
+		padding: 0px 25px;
+	}
+
+		Nav li > .componentes
+{
+	width: 144px;
+}
+
+.imagen{
+	width: 170px;
+	border-radius: 15px;
+}
+
+.imagen2{
+	width: 250px;
+	height: 175px;
+}
+
+iframe{
+	height: 412px;
+}
+
+.formulario .campo{
+	width: 90%;
+}
+
 }

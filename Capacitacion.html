@@ -6,6 +6,19 @@
 			<meta charset="utf-8">
 			<link rel="shortcut icon" href="ICON.ico">
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<script type="text/javascript">
+				function menu(argument) {
+					var ver = document.getElementById('check').checked;
+
+					if (ver == false) {
+						document.getElementById('nave').style.display = 'block';
+					}
+					else {
+						document.getElementById('nave').style.display = 'none';
+					}
+				}
+			</script>
 		</head>
 
 		<body>
@@ -30,8 +43,9 @@
 					<div class="Total" id="UPTAEB">
 						<center><a><img src="INVILARA.png"></center></a>
 					</div>
-					<div id="Fondo" class="Total"></div>
-					<ul class="principal" id="Fondo">
+					<div id="Fondo" class="Total"><input type="checkbox" id="check"><label for="check" id="menu" onclick="menu();">MENU <img src="menu.png"> </label></div>
+					<div id="nave">
+						<ul class="principal" id="Fondo">
 						<li>
 							<a href="index.html">Inicio</a>
 						</li> 
@@ -57,10 +71,12 @@
 						<li>
 							<a href="Contactanos.html">Contacto</a>
 						</li>
-					</ul>
+					</ul>	
+						</div>
+					
 				</nav>
 
-				<section>
+				<section id="capa">
 
 					<br>
 					<center><h1>Manual de Usuario</h1></center>
@@ -222,11 +238,13 @@
 
 					<br><br>
 
-					<center>La siguiente diapositiva se creó con el fin de dar a conocer la informacion antes plateada de forma más gráfica<center>
+					<center>La siguiente diapositiva se creó con el fin de dar a conocer la informacion antes plateada de forma más gráfica</center>
 
 					<br><br>
 
 					<center><iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSUfyGpfmen26egZ-4t8tuYx_yY2bzEDa_tbOsNQgCwNiElQzd5AZ1fPfnsgTmZiA/embed?start=false&loop=false&delayms=3000" frameborder="0" width="720" height="576" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe></center>
+
+					<br>
 
 				</section>
 
@@ -236,5 +254,6 @@
 				</footer>
 
 			</div>
+
 		</body>
 	</html>

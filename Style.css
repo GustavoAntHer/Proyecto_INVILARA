@@ -3,12 +3,6 @@ body
 	margin: 0px;
 }
 
-
-.Total
-{
-	width: 100%;
-}
-
 #Ministerio
 {
 	width: 170px;
@@ -21,6 +15,11 @@ body
 	width: 95px;
 	float: right; 
 	margin-right: 120px;
+}
+
+#nave{
+	position: absolute;
+	top: 90px;
 }
 
 #Navegacion
@@ -40,8 +39,29 @@ body
 #UPTAEB img
 {
 	padding: 10px;
-	width: 80px;
+	width: 90px;
 	box-sizing: border-box;
+}
+
+
+
+#menu{
+	margin-left: 10%;
+	font-size: 35px;
+	color: white;
+	font-weight: 700;
+	display: none;
+}
+
+#menu img{
+
+	width: 38px;
+	position: absolute;
+	right: 10%;
+}
+
+input[type="checkbox"]{
+	display: none;
 }
 
 #Fondo
@@ -60,7 +80,6 @@ nav ul
 nav > ul
 {
 	position: absolute;
-	top: 90px;
 	left: 7px;
 }
 
@@ -269,14 +288,16 @@ section p
 	transition: all 200ms ease;
 }
 
+
+
 .btn:hover
 {
 	background: #BFA9C2;
 }
 
-#g_border
-{
-	margin: 45px 70px;
+#Boton{
+	margin: 20px 0px;
+
 }
 
 #sec_g
@@ -307,14 +328,6 @@ section p
 	font-family: 'open sans', sans-serif;
 }
 
-.formulario textarea
-{
-	min-width: 470px;
-	min-height: 130px;
-	max-height: 150px;
-}
-
-
 footer
 {
 	color: white;
@@ -341,7 +354,7 @@ footer
 	}
 }
 
-@media (max-width: 952px){
+@media screen and (max-width: 952px){
 
 	#Ministerio
 {
@@ -349,9 +362,26 @@ footer
 	height: 42px;
 }
 
+#menu{
+	display: initial;
+	cursor: pointer;
+}
+
+#nave{
+	background-color: #7FABD4;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+	display: none;
+}
+
 #año
 {
-	width: 85px;
+	position: absolute;
+	right: 4%;
+	top: 2px;
+	width: 75px;
 }
 
 
@@ -365,28 +395,40 @@ footer
 {
 	box-sizing: border-box;
 	padding: 10px;
-	width: 60px;
+	width: 73px;
 }
 
+nav ul li, .last{
+	width: 100%;
+	border-radius: 0;
+}
 
-	nav>ul{
-		position: absolute;
-		top: 70px;
-		right: 8px;
-		line-height: 38px;
-	}
+.componentes{
+	width: 500%;
+}
+
+nav ul li a{
+
+	padding: 8px 38px 8px 10%;
+
+}
+
+nav ul li ul{
+	position: relative;
+	width: 100%;
+	left: 0;
+}
+
+nav ul li ul li{
+	background-color: #6082A1;
+}
+
 	
 	Nav ul li a{
 		font-size: 20px;
 		box-sizing: border-box;
 		padding: 0px 30px;
 	}
-
-
-	Nav li > .componentes
-{
-	width: 170px;
-}
 
 iframe{
 	width: 100%;
@@ -408,7 +450,43 @@ iframe{
 
 }
 
-@media (max-width: 858px){
+@media screen and (max-width: 400px){
+
+	#menu{
+		font-size: 0;
+	}
+
+header{
+	height: 45px;
+}
+
+#Ministerio
+{
+	position: absolute;
+	top: 5px;
+	left: -100px;
+	width: 80px;
+	height: 30px;
+}
+
+#año
+{
+	position: absolute;
+	right: -100px;
+	width: 55px;
+}
+
+
+	section{
+			font-size: 10px;
+			margin: 20px 10px;
+			padding: 10px 10px;
+	}
+
+	section .formulario a{
+		font-size: 15px;
+		display: inline-block;
+	}
 
 	nav>ul{
 		margin-left: 8px;
@@ -419,27 +497,47 @@ iframe{
 		padding: 0px 25px;
 	}
 
-		Nav li > .componentes
-{
-	width: 144px;
-}
-
 .imagen{
-	width: 170px;
+	float: none;
+	margin: auto;
+	width: 95%;
+	margin-bottom: 5px;
+	height: auto;
 	border-radius: 15px;
 }
 
-.imagen2{
-	width: 250px;
-	height: 175px;
-}
-
 iframe{
-	height: 412px;
+	height: 289px;
 }
 
 .formulario .campo{
 	width: 90%;
+}
+
+footer{
+	font-size: 7px;
+}
+
+#capa{
+	font-size: 15px;
+}
+	#mantenimiento{
+	font-size: 7px;
+}
+
+#Boton{
+	margin: 10px 0px;
+}
+
+#Boton .btn{
+	font-size: 10px;
+}
+#galeria{
+	display: block;
+}
+.columna
+{
+	width: 92%;
 }
 
 }

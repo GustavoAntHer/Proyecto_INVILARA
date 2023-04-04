@@ -6,13 +6,26 @@
 			<meta charset="utf-8">
 			<link rel="shortcut icon" href="ICON.ico">
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<script type="text/javascript">
+				function menu(argument) {
+					var ver = document.getElementById('check').checked;
+
+					if (ver == false) {
+						document.getElementById('nave').style.display = 'block';
+					}
+					else {
+						document.getElementById('nave').style.display = 'none';
+					}
+				}
+			</script>
 		</head>
 
 		<body>
 			<header>
 				<table class="Total">
 					<tr>
-						<td>
+						<td id="izq">
 							<img src="Gobernacion.png" id="Ministerio">
 						</td>
 						<td>
@@ -30,34 +43,37 @@
 					<div class="Total" id="UPTAEB">
 						<center><a><img src="INVILARA.png"></center></a>
 					</div>
-					<div id="Fondo" class="Total"></div>
-					<ul class="principal">
-						<li>
-							<a>Inicio</a>
-						</li> 
-						<li><a>Acerca de</a>
-							<ul>
-								<li><a href="nosotros.html">Nosostros</a></li>
-								<li><a href="proyectos.html" class="last">Proyectos</a></li>
-							</ul>
-						</li>
-						<li>
-							<a>Componentes</a>
-							<ul class="componentes">
-								<li><a href="Externos.html">Externos</a></li>
-								<li><a href="Internos.html" class="last">Internos</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="Capacitacion.html">Manual de Usuario</a>
-						</li>
-						<li>
-							<a href="galeria 1.html">Galería</a>
-						</li>
-						<li>
-							<a href="Contactanos.html">Contacto</a>
-						</li>
-					</ul>
+					<div id="Fondo" class="Total"><input type="checkbox" id="check">
+					<label for="check" id="menu" onclick="menu();">MENU <img src="menu.png"> </label></div>
+					<div id="nave">
+						<ul class="principal">
+							<li>
+								<a>Inicio</a>
+							</li> 
+							<li><a>Acerca de</a>
+								<ul>
+									<li><a href="nosotros.html">Nosostros</a></li>
+									<li><a href="proyectos.html" class="last">Proyectos</a></li>
+								</ul>
+							</li>
+							<li>
+								<a>Componentes</a>
+								<ul class="componentes">
+									<li><a href="Externos.html">Externos</a></li>
+									<li><a href="Internos.html" class="last">Internos</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="Capacitacion.html">Manual de Usuario</a>
+							</li>
+							<li>
+								<a href="galeria 1.html">Galería</a>
+							</li>
+							<li>
+								<a href="Contactanos.html">Contacto</a>
+							</li>
+						</ul>
+					</div>
 				</nav>
 
 				<section>

@@ -6,6 +6,18 @@
 			<meta charset="utf-8">
 			<link rel="shortcut icon" href="ICON.ico">
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<script type="text/javascript">
+				function menu(argument) {
+					var ver = document.getElementById('check').checked;
+
+					if (ver == false) {
+						document.getElementById('nave').style.display = 'block';
+					}
+					else {
+						document.getElementById('nave').style.display = 'none';
+					}
+				}
+			</script>
 		</head>
 
 		<body>
@@ -28,8 +40,9 @@
 						<div class="Total" id="UPTAEB">
 							<center><abbr title="Inicio"><a href="index.html"><img src="INVILARA.png"></center></a></abbr>
 						</div>
-						<div id="Fondo" class="Total"></div>
-						<ul class="principal">
+						<div id="Fondo" class="Total"><input type="checkbox" id="check"><label for="check" id="menu" onclick="menu();">MENU <img src="menu.png"> </label></div>
+						<div id="nave">
+													<ul class="principal">
 							<li>
 								<a href="index.html">Inicio</a>
 							</li> 
@@ -56,11 +69,12 @@
 								<a href="Contactanos.html">Contacto</a>
 							</li>
 						</ul>
+						</div>
+
 					</nav>
 
-				<div id="g_border">
-					<div class="Total" align="right"><a href="galeria 2.html" ><button class="btn" id="sgt">Página siguiente</button></a></div>
-					<section id="sec_g">
+					<div class="Total" id="Boton" align="right"><a href="galeria 2.html" ><button class="btn" id="sgt">Página siguiente</button></a></div>
+					<section>
 						<center><h2 id="galeri">Galería</h2></center>
 
 						<div id="galeria">
@@ -85,8 +99,8 @@
 
 						</div>
 					</section>
-					<div class="Total" align="right"><a href="galeria 2.html" ><button class="btn" id="sgt">Página siguiente</button></a></div>			
-				</div>
+					<div class="Total" align="right" id="Boton"><a href="galeria 2.html" ><button class="btn" id="sgt">Página siguiente</button></a></div>			
+
 				<footer>
 					<hr>
 					<center>&copy; Gustavo Heredia Todos los derechos reservados, 2023</center>
